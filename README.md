@@ -10,12 +10,12 @@ For this piece I wanted to use some kind of dynamical system to provide me with 
 
 
 For the structure I am muting and triggering various audio processing events using a grammar. The rules are as follows:
-A -> E H
-B -> G
-C -> D
-D -> E
-E-> E F G F
-G -> H
+- A -> E H
+- B -> G
+- C -> D
+- D -> E
+- E-> E F G F
+- G -> H
 
 I would then use a select object to send information to where we are in the grammar which would trigger various changes. The rate at which the grammar moves on to the next item is decided by the Dejong map dxdt output scaled to appropriate values.
 
